@@ -1,31 +1,123 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background-color: #6c3483;
+  color: white;
+  padding: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.navbar {
+  background-color: #dcdcdc;
+  padding: 0.75rem 1rem;
   display: flex;
-  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6c3483;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #922b21;
+  text-decoration: underline;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eeeeee;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.accordion {
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.accordion button {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  background-color: #f2f2f2;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accordion button:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+.course-card {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #fefefe;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.course-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.course-card button {
+  background-color: #6c3483;
   color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
+.course-card button:hover {
+  background-color: #5a2d6f;
 }
